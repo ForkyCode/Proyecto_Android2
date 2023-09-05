@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FA933F"
+    android:backgroundTint="#FB9543"
+    android:gravity="center"
+    android:onClick="IniciarSesion"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".RegistrarActivity">
+
+    <ImageView
+        android:layout_width="387dp"
+        android:layout_height="315dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/logo_3" />
+
+    <EditText
+        android:id="@+id/editTextCed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Cédula"
+        android:inputType="text"
+        android:textAlignment="textStart"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editTextCel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Celular"
+        android:inputType="number"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#000000" />
+
+    <Button
+        android:id="@+id/buttonRegistrarS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:text="Registrar"
+        android:textColor="#FFF6F4" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:onClick="IniciarSesion"
+        android:text="Iniciar Sesion"
+        android:textColor="#FFF6F4" />
+
+</LinearLayout>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FB903A"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".IniciarSesionActivity">
+
+    <ImageView
+        android:layout_width="363dp"
+        android:layout_height="307dp"
+        android:layout_gravity="center"
+        android:layout_marginBottom="26dp"
+        android:src="@drawable/logo_3" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Nombre"
+        android:inputType="text"
+        android:textColorHint="#000000" />
+
+    <EditText
+        android:id="@+id/editTextPass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#000000"
+        android:backgroundTintMode="add"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="#000000" />
+
+    <Button
+        android:id="@+id/buttonIniciarS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:text="Iniciar Sesión"
+        android:textColor="#FFF6F4" />
+
+    <Button
+        android:id="@+id/buttonVolver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#000000"
+        android:onClick="Registrarse"
+        android:text="Registrarse"
+        android:textColor="#FFF6F4" />
+
+</LinearLayout>

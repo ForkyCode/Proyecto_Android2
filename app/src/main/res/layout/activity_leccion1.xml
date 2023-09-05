@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leccion1">
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="355dp"
+        android:layout_height="80dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logo_2" />
+
+    <TextView
+        android:id="@+id/txtNpregunta"
+        android:layout_width="278dp"
+        android:layout_height="54dp"
+        android:hint="Pregunta 1"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.538"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.156" />
+
+    <TextView
+        android:id="@+id/txtPregunta"
+        android:layout_width="286dp"
+        android:layout_height="87dp"
+        android:hint="Esta es la pregunta 1, su respuesta correcta es la 2"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.273" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="242dp"
+        android:layout_height="143dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RadioButton
+            android:id="@+id/rdBtnOpc1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 1" />
+
+        <RadioButton
+            android:id="@+id/rdBtnOpc2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 2" />
+
+        <RadioButton
+            android:id="@+id/rdBtnOpc3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Respuesta 3" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSiguiente"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFF6F4"
+        android:onClick="siguiente"
+        android:text="Siguiente"
+        android:textColor="#525FE1"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.704"
+        app:strokeColor="#525FE1"
+        app:strokeWidth="2dp" />
+
+    <Button
+        android:id="@+id/btnSalir"
+        android:layout_width="156dp"
+        android:layout_height="55dp"
+        android:backgroundTint="#FFF6F4"
+        android:onClick="Salir"
+        android:text="Salir"
+        android:textColor="#525FE1"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.795"
+        app:strokeColor="#525FE1"
+        app:strokeWidth="2dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
